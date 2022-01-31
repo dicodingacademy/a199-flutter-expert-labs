@@ -1,15 +1,15 @@
 class CatImage {
   CatImage(
-    this.link,
+    this.url,
   );
 
-  String link;
+  String url;
 
   factory CatImage.fromJson(Map<String, dynamic> json) => CatImage(
-        json["link"],
+        json["url"],
       );
 
   Map<String, dynamic> toJson() => {
-        "link": link,
+        "url": url,
       };
 }

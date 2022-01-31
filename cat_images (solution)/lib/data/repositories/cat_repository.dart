@@ -10,7 +10,7 @@ class CatRepository {
 
   Future<CatImage> getCatImage() async {
     final response =
-        await _client.get(Uri.parse('https://some-random-api.ml/img/cat'));
-    return CatImage.fromJson(jsonDecode(response.body));
+        await _client.get(Uri.parse('https://api.thecatapi.com/v1/images/search'));
+    return CatImage.fromJson(jsonDecode(response.body)[0]);
   }
 }

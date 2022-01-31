@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
             final catImage = notifier.image;
             return Center(
               child: catImage != null
-                  ? Image.network(catImage.link)
+                  ? Image.network(catImage.url)
                   : Text('Image not loaded yet'),
             );
           },
