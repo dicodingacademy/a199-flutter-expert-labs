@@ -1,6 +1,6 @@
 import 'package:cat_images/data/repositories/cat_repository.dart';
 import 'package:cat_images/presentation/notifier/cat_notifier.dart';
-import 'package:cat_images/utils/ssl_pinning.dart';
+import 'package:cat_images/data/utils/ssl_pinning.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/io_client.dart';
 
